@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <title>Practice</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-info">
+        <div class="header-l">
+          <div class="city-select">
+            <div class="city-select__img">
+              <svg width="12" height="14" viewBox="0 0 12 14" fill="#7B94B0">
+                <use xlink:href="img/sprite.svg#geo" />
+              </svg>
+            </div>
+            <div class="city-select__group">
+              <select name="city" id="city">
+                <option value="Киев">Киев</option>
+                <option value="Харьков">Харьков</option>
+                <option value="Одесса">Одесса</option>
+                <option value="Херсон" selected>Херсон</option>
+              </select>
+            </div>
+          </div>
+          <ul class="info-menu">
+            <li class="info-menu__item">
+              <a href="#">Магазины</a>
+            </li>
+            <li class="info-menu__item">
+              <a href="#">Блог</a>
+            </li>
+            <li class="info-menu__item info-menu__dropdown">
+              <a href="#">Покупателям
+                <span class="info-menu__item-img">
+                  <svg width="10" height="7" viewBox="0 0 10 7" stroke="#7B94B0" fill="none">
+                    <use xlink:href="img/sprite.svg#arrow" />
+                  </svg>
+                </span>
+              </a>
+              <ul class="info-menu__dropdown-group">
+                <li class="info-menu__dropdown-item">
+                  <a href="#">О компании</a>
+                </li>
+                <li class="info-menu__dropdown-item">
+                  <a href="#">Сотрудничество</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header-r">
+          <div class="callback">
+            <span>Консультация:</span>
+            <ul class="callback__group">
+              <li class="callback__item">
+                <a href="tel:+380444903100">(044) 490 31 00
+                  <span class="callback__item-img">
+                    <svg width="10" height="7" viewBox="0 0 10 7" stroke="#7B94B0" fill="none">
+                      <use xlink:href="img/sprite.svg#arrow" />
+                    </svg>
+                  </span>
+                </a>
+                <ul class="callback__dropdown">
+                  <li class="callback__dropdown-item">
+                    <a href="tel:+380444903100">(044) 490 31 01</a>
+                  </li>
+                  <li class="callback__dropdown-item">
+                    <a href="tel:+380444903100">(044) 490 31 02</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="language">
+            <span class="language__item">
+              <a href="#" class="language__link">Укр</a>
+            </span>
+            <span class="language__item">
+              <a href="#" class="language__link language__link--active">Рус</a>
+            </span>
+            <span class="language__item">
+              <a href="#" class="language__link">Eng</a>
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="header-main">
+        <div class="header-logo">
+          <a href="#">
+            <svg width="114" height="41" viewBox="0 0 114 41" fill="#2C9323">
+              <use xlink:href="img/sprite.svg#wezom-logo" />
+            </svg>
+          </a>
+        </div>
+        <ul class="header-menu">
+          <li class="header-menu__item header-menu__item-dropdown">
+            <a href="#">Товары по питомцам
+              <span class="header-menu__item-img">
+                <svg width="12" height="8" viewBox="0 0 12 8" stroke="#7B94B0" fill="none">
+                  <use xlink:href="img/sprite.svg#arrow-big" />
+                </svg>
+              </span>
+            </a>
+            <ul class="header-menu__dropdown-group">
+              <li class="header-menu__dropdown-item">
+                <a href="#">Корм</a>
+              </li>
+              <li class="header-menu__dropdown-item">
+                <a href="#">Витамины</a>
+              </li>
+              <li class="header-menu__dropdown-item">
+                <a href="#">Игрушки</a>
+              </li>
+              <li class="header-menu__dropdown-item">
+                <a href="#">Ошейники</a>
+              </li>
+              <li class="header-menu__dropdown-item">
+                <a href="#">Костюмы</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-menu__item header-menu__item-dropdown">
+            <a href="#">Бренды
+              <span class="header-menu__item-img">
+                <svg width="12" height="8" viewBox="0 0 12 8" stroke="#7B94B0" fill="none">
+                  <use xlink:href="img/sprite.svg#arrow-big" />
+                </svg>
+              </span>
+            </a>
+            <ul class="header-menu__dropdown-group">
+              <li class="header-menu__dropdown-item">
+                <a href="#">Бренд 1</a>
+              </li>
+              <li class="header-menu__dropdown-item">
+                <a href="#">Бренд 2</a>
+              </li>
+              <li class="header-menu__dropdown-item">
+                <a href="#">Бренд 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-menu__item header-menu__item-dropdown">
+            <a href="#">Ветаптека
+              <span class="header-menu__item-img">
+                <svg width="12" height="8" viewBox="0 0 12 8" stroke="#7B94B0" fill="none">
+                  <use xlink:href="img/sprite.svg#arrow-big" />
+                </svg>
+              </span>
+            </a>
+            <ul class="header-menu__dropdown-group">
+              <li class="header-menu__dropdown-item">
+                <a href="#">Таблетки</a>
+              </li>
+              <li class="header-menu__dropdown-item">
+                <a href="#">Витамины</a>
+              </li>
+              <li class="header-menu__dropdown-item">
+                <a href="#">Жидкие витамины</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-menu__item">
+            <a href="#">Найди друга</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#">Ветклиники</a>
+          </li>
+        </ul>
+
+        <div class="header-action">
+          <div class="search">
+            <form action="URL" class="search__form">
+              <span>
+                <button type="submit" class="search__button">
+                  <svg width="26" height="26" viewBox="0 0 26 26" stroke="#202454" fill="none">
+                    <use xlink:href="img/sprite.svg#search" />
+                  </svg>
+                </button>
+                <input type="text" class="search__input" placeholder="Поиск">
+              </span>
+            </form>
+          </div>
+
+          <div class="action-menu">
+            <span class="action-menu__item action-menu__item-profile">
+              <a href="#">
+                <svg width="22" height="26" viewBox="0 0 22 26" stroke="#202454" fill="none">
+                  <use xlink:href="img/sprite.svg#profile" />
+                </svg>
+              </a>
+            </span>
+            <span class="action-menu__item action-menu__item-favourite">
+              <a href="#">
+                <svg width="27" height="25" viewBox="0 0 27 25" stroke="#202454" fill="none">
+                  <use xlink:href="img/sprite.svg#favourite" />
+                </svg>
+              </a>
+            </span>
+            <span class="action-menu__item action-menu__item-basket ">
+              <a href="#">
+                <svg width="30" height="29" viewBox="0 0 30 29" stroke="#202454" fill="none">
+                  <use xlink:href="img/sprite.svg#basket" />
+                </svg>
+              </a>
+              <span class="action-menu__basket-count">0</span>
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <div class="best-deals">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="deals-head">
+            <div class="deals-head__title">
+              <h2>Лучшие предложения недели</h2>
+            </div>
+
+            <div class="deals-filter">
+              <div class="deals-filter__item">
+                <button class="deals-filter__button deals-filter__button--active">Собакам</button>
+              </div>
+              <div class="deals-filter__item">
+                <button class="deals-filter__button">Кошкам</button>
+              </div>
+              <div class="deals-filter__item">
+                <button class="deals-filter__button">Птицам</button>
+              </div>
+              <div class="deals-filter__item">
+                <button class="deals-filter__button">Грызунам</button>
+              </div>
+            </div>
+
+            <div class="deals-filter-switch">
+              <div class="deals-filter-switch__prev deals-filter-switch__prev--first">
+                <button class="deals-filter-switch__button">
+                  <svg width="9" height="14" viewBox="0 0 9 14" stroke="white" fill="none">
+                    <use xlink:href="img/sprite.svg#arrow-filter" />
+                  </svg>
+                </button>
+              </div>
+              <div class="deals-filter-switch__next">
+                <button class="deals-filter-switch__button">
+                  <svg width="9" height="14" viewBox="0 0 9 14" stroke="white" fill="none">
+                    <use xlink:href="img/sprite.svg#arrow-filter" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="deals-slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="deals-slider__item">
+                    <div class="deal-card">
+                      <a href="#" class="deal-card__top">
+                        <div class="deal-card__labels">
+                          <span class="deal-card__label deal-card__label-top">Топ продаж</span>
+                          <span class="deal-card__label deal-card__label-sale">Скидка -5%</span>
+                        </div>
+                        <div class="deal-card__img">
+                          <img src="img/deals-cards/1.jpg" alt="Brit Premium (Брит Премиум)">
+                        </div>
+                      </a>
+                      <div class="deal-card__info">
+                        <div class="deal-card__title">Brit Premium (Брит Премиум) by Nature ADULT L - Сухой корм с
+                          курицей, 4 кг
+                        </div>
+                        <a href="#" class="deal-card__rating">
+                          <div class="deal-card__rating-stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                          </div>
+                          <span class="deal-card__reviews-count">(0)</span>
+
+                        </a>
+                        <div class="deal-card__buy">
+                          <div class="deal-card__wholesale">
+                            <div class="deal-card__wholesale-arrow">
+                              <svg width="11" height="14" viewBox="0 0 11 14" fill="white">
+                                <use xlink:href="img/sprite.svg#arrow-price" />
+                              </svg>
+                            </div>
+                            <span class="deal-card__wholesale-price">1 550,22 &#8372;</span>
+                          </div>
+                          <div class="deal-card__price">
+                            <span class="deal-card__price-old">1 700,22</span>
+                            <span class="deal-card__price-current">1 600,22 &#8372;</span>
+                          </div>
+                          <button class="deal-card__add">
+                            <svg width="21" height="20" viewBox="0 0 21 20" stroke="#3A9EFD" fill="none">
+                              <use xlink:href="img/sprite.svg#deal-basket" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="deals-slider__item">
+                    <div class="deal-card">
+                      <a href="#" class="deal-card__top">
+                        <div class="deal-card__labels">
+                          <span class="deal-card__label deal-card__label-sale">Скидка -5%</span>
+                        </div>
+                        <div class="deal-card__img">
+                          <img src="img/deals-cards/2.jpg" alt="Schesir Dog Small Adult Lamb">
+                        </div>
+                      </a>
+                      <div class="deal-card__info">
+                        <div class="deal-card__title">Schesir Dog Small Adult Lamb сухой монопротеиновый корм для собак
+                          малых
+                          пород</div>
+                        <a href="#" class="deal-card__rating">
+                          <div class="deal-card__rating-stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E77E42">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E77E42">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E77E42">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E77E42">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E77E42">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                          </div>
+                          <span class="deal-card__reviews-count">(12)</span>
+
+                        </a>
+                        <div class="deal-card__buy">
+                          <div class="deal-card__wholesale">
+                            <div class="deal-card__wholesale-arrow">
+                              <svg width="11" height="14" viewBox="0 0 11 14" fill="white">
+                                <use xlink:href="img/sprite.svg#arrow-price" />
+                              </svg>
+                            </div>
+                            <span class="deal-card__wholesale-price">от 198,22 &#8372;</span>
+                          </div>
+                          <div class="deal-card__price">
+                            <span class="deal-card__price-old">от 260,22</span>
+                            <span class="deal-card__price-current">от 206,71 &#8372;</span>
+                          </div>
+                          <button class="deal-card__add">
+                            <svg width="21" height="20" viewBox="0 0 21 20" stroke="#3A9EFD" fill="none">
+                              <use xlink:href="img/sprite.svg#deal-basket" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="deals-slider__item">
+                    <div class="deal-card">
+                      <a href="#" class="deal-card__top">
+                        <div class="deal-card__labels">
+                          <span class="deal-card__label deal-card__label-new">Новинка</span>
+                        </div>
+                        <div class="deal-card__img">
+                          <img src="img/deals-cards/3.jpg" alt="PetKind Beef Tripe Formula">
+                        </div>
+                      </a>
+                      <div class="deal-card__info">
+                        <div class="deal-card__title">PetKind Beef Tripe Formula Беззерновые консервы для собак с
+                          говядиной, 500
+                          мл</div>
+                        <a href="#" class="deal-card__rating">
+                          <div class="deal-card__rating-stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E77E42">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E77E42">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E77E42">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E77E42">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                          </div>
+                          <span class="deal-card__reviews-count">(65)</span>
+
+                        </a>
+                        <div class="deal-card__buy">
+                          <div class="deal-card__wholesale">
+                            <div class="deal-card__wholesale-arrow">
+                              <svg width="11" height="14" viewBox="0 0 11 14" fill="white">
+                                <use xlink:href="img/sprite.svg#arrow-price" />
+                              </svg>
+                            </div>
+                            <span class="deal-card__wholesale-price">Автозаказ</span>
+                          </div>
+                          <div class="deal-card__price">
+                            <span class="deal-card__price-current">1 600,22 &#8372;</span>
+                          </div>
+                          <button class="deal-card__add">
+                            <svg width="21" height="20" viewBox="0 0 21 20" stroke="#3A9EFD" fill="none">
+                              <use xlink:href="img/sprite.svg#deal-basket" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="deals-slider__item">
+                    <div class="deal-card">
+                      <a href="#" class="deal-card__top">
+                        <div class="deal-card__labels">
+                          <span class="deal-card__label deal-card__label-top">Топ продаж</span>
+                          <span class="deal-card__label deal-card__label-sale">Скидка -5%</span>
+                        </div>
+                        <div class="deal-card__img">
+                          <img src="img/deals-cards/4.jpg" alt="Scalibor (Скалибор) ошейник">
+                        </div>
+                      </a>
+                      <div class="deal-card__info">
+                        <div class="deal-card__title">Scalibor (Скалибор) ошейник 48 см</div>
+                        <a href="#" class="deal-card__rating">
+                          <div class="deal-card__rating-stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                          </div>
+                          <span class="deal-card__reviews-count">(0)</span>
+
+                        </a>
+                        <div class="deal-card__buy">
+                          <div class="deal-card__wholesale">
+                            <div class="deal-card__wholesale-arrow">
+                              <svg width="11" height="14" viewBox="0 0 11 14" fill="white">
+                                <use xlink:href="img/sprite.svg#arrow-price" />
+                              </svg>
+                            </div>
+                            <span class="deal-card__wholesale-price">520,00 &#8372;</span>
+                          </div>
+                          <div class="deal-card__price">
+                            <span class="deal-card__price-old">640,22</span>
+                            <span class="deal-card__price-current">560,22 &#8372;</span>
+                          </div>
+                          <button class="deal-card__add">
+                            <svg width="21" height="20" viewBox="0 0 21 20" stroke="#3A9EFD" fill="none">
+                              <use xlink:href="img/sprite.svg#deal-basket" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="deals-slider__item">
+                    <div class="deal-card">
+                      <a href="#" class="deal-card__top">
+                        <div class="deal-card__labels">
+                          <span class="deal-card__label deal-card__label-top">Топ продаж</span>
+                        </div>
+                        <div class="deal-card__img">
+                          <img src="img/deals-cards/5.jpg" alt="1st Choice Puppy Toy&Small Lamb&Fish">
+                        </div>
+                      </a>
+                      <div class="deal-card__info">
+                        <div class="deal-card__title">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум корм для
+                          щенков
+                          мини и малых пород, 2 кг</div>
+                        <a href="#" class="deal-card__rating">
+                          <div class="deal-card__rating-stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                          </div>
+                          <span class="deal-card__reviews-count">(0)</span>
+                        </a>
+
+                        <div class="deal-card__buy">
+                          <div class="deal-card__wholesale">
+                            <div class="deal-card__wholesale-arrow">
+                              <svg width="11" height="14" viewBox="0 0 11 14" fill="white">
+                                <use xlink:href="img/sprite.svg#arrow-price" />
+                              </svg>
+                            </div>
+                            <span class="deal-card__wholesale-price">1 550,22 &#8372;</span>
+                          </div>
+                          <div class="deal-card__price">
+                            <span class="deal-card__price-current">1 600,22 &#8372;</span>
+                          </div>
+                          <button class="deal-card__add">
+                            <svg width="21" height="20" viewBox="0 0 21 20" stroke="#3A9EFD" fill="none">
+                              <use xlink:href="img/sprite.svg#deal-basket" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="deals-slider__item">
+                    <div class="deal-card">
+                      <a href="#" class="deal-card__top">
+                        <div class="deal-card__labels">
+                          <span class="deal-card__label deal-card__label-top">Топ продаж</span>
+                        </div>
+                        <div class="deal-card__img">
+                          <img src="img/deals-cards/5.jpg" alt="1st Choice Puppy Toy&Small Lamb&Fish">
+                        </div>
+                      </a>
+                      <div class="deal-card__info">
+                        <div class="deal-card__title">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум корм для
+                          щенков
+                          мини и малых пород, 2 кг</div>
+                        <a href="#" class="deal-card__rating">
+                          <div class="deal-card__rating-stars">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="#E0E0E0">
+                              <use xlink:href="img/sprite.svg#star" />
+                            </svg>
+                          </div>
+                          <span class="deal-card__reviews-count">(0)</span>
+                        </a>
+
+                        <div class="deal-card__buy">
+                          <div class="deal-card__wholesale">
+                            <div class="deal-card__wholesale-arrow">
+                              <svg width="11" height="14" viewBox="0 0 11 14" fill="white">
+                                <use xlink:href="img/sprite.svg#arrow-price" />
+                              </svg>
+                            </div>
+                            <span class="deal-card__wholesale-price">1 550,22 &#8372;</span>
+                          </div>
+                          <div class="deal-card__price">
+                            <span class="deal-card__price-current">1 600,22 &#8372;</span>
+                          </div>
+                          <button class="deal-card__add">
+                            <svg width="21" height="20" viewBox="0 0 21 20" stroke="#3A9EFD" fill="none">
+                              <use xlink:href="img/sprite.svg#deal-basket" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="useful-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="search-card">
+            <span class="search-card__subtitle">Объявления о продаже</span>
+            <div class="search-card__logo">
+              <svg width="44" height="45" viewBox="0 0 44 45" fill="none">
+                <use xlink:href="img/sprite.svg#search-paw" />
+              </svg>
+            </div>
+            <div class="search-card__title">Найди друга</div>
+            <p class="search-card__text">Ищете питомца? Посмотрите сотни объявлений от проверенных разводителей.</p>
+            <div class="search-card-tile">
+              <a href="#" class="search-card-tile__item">
+                <img src="img/search-card/1.jpg" alt="Animals">
+              </a>
+              <a href="#" class="search-card-tile__item">
+                <img src="img/search-card/2.jpg" alt="Animals">
+              </a>
+              <a href="#" class="search-card-tile__item">
+                <img src="img/search-card/3.jpg" alt="Animals">
+              </a>
+              <a href="#" class="search-card-tile__item">
+                <img src="img/search-card/4.jpg" alt="Animals">
+              </a>
+              <a href="#" class="search-card-tile__item">
+                <img src="img/search-card/5.jpg" alt="Animals">
+              </a>
+              <a href="#" class="search-card-tile__item">
+                <img src="img/search-card/6.jpg" alt="Animals">
+              </a>
+            </div>
+            <a href="#" class="search-card__link">Все объявления
+              <svg width="9" height="15" viewBox="0 0 9 15" fill="none" stroke="white">
+                <use xlink:href="img/sprite.svg#arrow-big-search" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col-7 offset-1">
+          <div class="blog">
+            <div class="blog__title">Полезные материалы</div>
+            <div class="blog-filter">
+              <div class="blog-filter__group">
+                <div class="blog-filter__item">
+                  <button class="blog-filter__button">Новости</button>
+                </div>
+                <div class="blog-filter__item">
+                  <button class="blog-filter__button">Полезные советы</button>
+                </div>
+                <div class="blog-filter__item">
+                  <button class="blog-filter__button">Видео</button>
+                </div>
+                <div class="blog-filter__item">
+                  <button class="blog-filter__button">Обзоры товаров</button>
+                </div>
+                <div class="blog-filter__item">
+                  <button class="blog-filter__button">Лайфхаки</button>
+                </div>
+              </div>
+              <div class="blog-filter__follow">
+                <a href="#" class="blog-filter__link">Перейти в блог</a>
+              </div>
+            </div>
+
+            <div class="blog-tile">
+              <div class="blog-card">
+                <a href="#" class="blog-card__top">
+                  <div class="blog-card__labels">
+                    <div class="blog-card__label blog-card__label--useful">Полезные советы</div>
+                  </div>
+                  <div class="blog-card__img">
+                    <img src="img/blog-card/1.jpg" alt="Cat">
+                  </div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__date">
+                    <div class="blog-card__day">22</div>
+                    <div class="blog-card__month">сент</div>
+                  </div>
+                  <a href="#" class="blog-card__text">Как выбрать корм для питомца. Советы профессионалов. Выбираем корм
+                    для котов 7+</a>
+                </div>
+
+              </div>
+              <div class="blog-card">
+                <a href="#" class="blog-card__top">
+                  <div class="blog-card__labels">
+                    <div class="blog-card__label blog-card__label--lifehack">Лайфхаки</div>
+                  </div>
+                  <div class="blog-card__img">
+                    <img src="img/blog-card/2.jpg" alt="Dog">
+                  </div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__date">
+                    <div class="blog-card__day">19</div>
+                    <div class="blog-card__month">сент</div>
+                  </div>
+                  <a href="#" class="blog-card__text">Как научить собаку команде "принеси тапочки" в домашних
+                    условиях</a>
+                </div>
+              </div>
+
+              <div class="blog-card blog-card--video">
+                <a href="#" class="blog-card__top">
+                  <div class="blog-card__labels">
+                    <div class="blog-card__label blog-card__label--video">Видео</div>
+                  </div>
+                  <div class="blog-card__img">
+                    <img src="img/blog-card/3.jpg" alt="Cat">
+                  </div>
+                  <div class="blog-card__play-img">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                      <use xlink:href="img/sprite.svg#play-img" />
+                    </svg>
+                  </div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__date">
+                    <div class="blog-card__day">14</div>
+                    <div class="blog-card__month">сент</div>
+                  </div>
+                  <a href="#" class="blog-card__text">Обзор товаров. Выбираем лучшую когтеточку для вашего кота.</a>
+                </div>
+              </div>
+
+              <div class="blog-card">
+                <a href="#" class="blog-card__top">
+                  <div class="blog-card__labels">
+                    <div class="blog-card__label blog-card__label--review">Обзоры товаров</div>
+                    <div class="blog-card__label blog-card__label--news">Новости</div>
+                  </div>
+                  <div class="blog-card__img">
+                    <img src="img/blog-card/4.jpg" alt="Dog">
+                  </div>
+                </a>
+                <div class="blog-card__info">
+                  <div class="blog-card__date">
+                    <div class="blog-card__day">09</div>
+                    <div class="blog-card__month">сент</div>
+                  </div>
+                  <a href="#" class="blog-card__text">Игрушка для собак Trixie Мяч светящийся с шипами</a>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="benefits">
+    <div class="container">
+      <div class="benefits__inner">
+        <div class="row">
+          <div class="col-2 offset-2">
+            <div class="benefits-item">
+              <div class="benefits-item__img">
+                <svg width="45" height="32" viewBox="0 0 45 32" fill="#E9793A">
+                  <use xlink:href="img/sprite.svg#benefits-delivery" />
+                </svg>
+              </div>
+              <div class="benefits-item__text">Бесплатная доставка при заказе от 300 грн</div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="benefits-item">
+              <div class="benefits-item__img">
+                <svg width="30" height="32" viewBox="0 0 30 32" fill="#E9793A">
+                  <use xlink:href="img/sprite.svg#benefits-sales" />
+                </svg>
+              </div>
+              <div class="benefits-item__text">Акции и скидки среди 2400 товаров</div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="benefits-item">
+              <div class="benefits-item__img">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="#E9793A">
+                  <use xlink:href="img/sprite.svg#benefits-outlets" />
+                </svg>
+              </div>
+              <div class="benefits-item__text">Более 100 магазинов по всей Украине</div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="benefits-item">
+              <div class="benefits-item__img">
+                <svg width="40" height="26" viewBox="0 0 40 26" fill="none" stroke="#E9793A">
+                  <use xlink:href="img/sprite.svg#benefits-discount" />
+                </svg>
+              </div>
+              <div class="benefits-item__text">Дисконтная программа ZooBonus.ua</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="seo">
+    <div class="container">
+      <div class="seo__inner">
+        <div class="row">
+          <div class="col-10 offset-1">
+            <span class="seo__title">Зоомагазин для домашних питомцев</span>
+            <p class="seo__text">Любящие владельцы собак и кошек всегда хотят порадовать своих любимцев новыми
+              игрушками, приобрести качественную амуницию, обеспечить животному полноценное питание и отдых, заботятся о
+              его здоровье. Зоомагазин — это любимое место для всех любителей животных.</p>
+            <span class="seo__subtitle">Каким должен быть хороший магазин товаров для животных</span>
+            <p class="seo__text seo__text--hidden">Многие владельцы животных часами просматривают адреса зоомагазинов в
+              интернете, читают отзывы. Далеко не каждый зоомагазин в Киеве и других городах соответствует критериям,
+              важным для покупателя: <br>
+              Многие владельцы животных часами просматривают адреса зоомагазинов в интернете, читают отзывы. Далеко не
+              каждый зоомагазин в Киеве и других городах соответствует критериям, важным для покупателя:</p>
+            <button class="seo__button">Показать все</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="involve">
+    <div class="container">
+      <div class="involve__inner">
+        <div class="row">
+          <div class="col-3 offset-2">
+            <div class="involve__img">
+              <img class="involve__img-dog" src="img/involve/dog.png" alt="Dog">
+              <img class="involve__img-cat" src="img/involve/cat.png" alt="Cat">
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="involve-content">
+              <div class="involve-content__text">Акции, скидки и специальные предложения для зарегистрированных
+                пользователей</div>
+              <a href="#" class="involve-content__registration">зарегистрироваться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="row">
+          <div class="col-2">
+            <div class="footer-logo">
+              <div class="footer-logo__img">
+                <a href="#" class="footer-logo__link">
+                  <svg width="114" height="41" viewBox="0 0 114 41" fill="#2C9323">
+                    <use xlink:href="img/sprite.svg#wezom-logo" />
+                  </svg>
+                </a>
+              </div>
+              <p class="footer-logo__caption">&#169; 2020 Интернет-магазин</p>
+            </div>
+          </div>
+          <div class="col-2 offset-1">
+            <div class="footer-social">
+              <div class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg width="12" height="24" viewBox="0 0 12 24" fill="white">
+                    <use xlink:href="img/sprite.svg#social-facebook" />
+                  </svg>
+                </a>
+              </div>
+              <div class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <use xlink:href="img/sprite.svg#social-instagram" />
+                  </svg>
+                </a>
+              </div>
+              <div class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                  <svg width="22" height="24" viewBox="0 0 22 24" fill="white">
+                    <use xlink:href="img/sprite.svg#social-viber" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 offset-1">
+            <div class="footer-communication">
+              <a href="#" class="footer-communication-chat" target="_blank">
+                <div class="footer-communication-chat__img">
+                  <svg width="34" height="33" viewBox="0 0 34 33" fill="#E77E42">
+                    <use xlink:href="img/sprite.svg#communicate-chat" />
+                  </svg>
+                </div>
+                <div class="footer-communication-chat__text">Чат онлайн</div>
+              </a>
+              <a href="mailto:info@wezom.com.ua" class="footer-communication-message" target="_blank">
+                <div class="footer-communication-message__img">
+                  <svg width="27" height="24" viewBox="0 0 27 24" fill="#E77E42">
+                    <use xlink:href="img/sprite.svg#communicate-message" />
+                  </svg>
+                </div>
+                <div class="footer-communication-message__text">Написать нам</div>
+              </a>
+            </div>
+          </div>
+          <div class="col-1 offset-2">
+            <div class="to-top">
+              <a href="#" class="to-top__link" target="_blank">
+                <span class="to-top__text">Вверх</span>
+                <span class="to-top__img">
+                  <svg width="14" height="9" viewBox="0 0 14 9" stroke="white" fill="none">
+                    <use xlink:href="img/sprite.svg#arrow-to-top" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-main">
+        <div class="row">
+          <div class="col-2">
+            <div class="footer-terms">
+              <ul class="footer-terms-list">
+                <li class="footer-terms-list__item">
+                  <a href="#" class="footer-terms-list__link" target="_blank">Условия использования сайта</a>
+                </li>
+                <li class="footer-terms-list__item">
+                  <a href="#" class="footer-terms-list__link" target="_blank">Защита персональных данных</a>
+                </li>
+                <li class="footer-terms-list__item">
+                  <a href="#" class="footer-terms-list__link" target="_blank">Карта сайта</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2 offset-1">
+            <div class="footer-firm">
+              <ul class="footer-firm-list">
+                <li class="footer-firm-list__title">Компания</li>
+                <li class="footer-firm-list__item">
+                  <a href="#" class="footer-firm-list__link" target="_blank">О компании</a>
+                </li>
+                <li class="footer-firm-list__item">
+                  <a href="#" class="footer-firm-list__link" target="_blank">Адреса магазинов «ZooBonus»</a>
+                </li>
+                <li class="footer-firm-list__item">
+                  <a href="#" class="footer-firm-list__link" target="_blank">Вакансии</a>
+                </li>
+                <li class="footer-firm-list__item">
+                  <a href="#" class="footer-firm-list__link" target="_blank">Благотворительность</a>
+                </li>
+                <li class="footer-firm-list__item">
+                  <a href="#" class="footer-firm-list__link" target="_blank">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3 offset-1">
+            <div class="footer-customer">
+              <ul class="footer-customer-list">
+                <li class="footer-customer-list__title">Покупателям</li>
+                <li class="footer-customer-list__item">
+                  <a href="#" class="footer-customer-list__link" target="_blank">Доставка и оплата</a>
+                </li>
+                <li class="footer-customer-list__item">
+                  <a href="#" class="footer-customer-list__link" target="_blank">FAQ</a>
+                </li>
+                <li class="footer-customer-list__item">
+                  <a href="#" class="footer-customer-list__link" target="_blank">Подарочные сертификаты</a>
+                </li>
+                <li class="footer-customer-list__item">
+                  <a href="#" class="footer-customer-list__link" target="_blank">Акции </a>
+                </li>
+                <li class="footer-customer-list__item">
+                  <a href="#" class="footer-customer-list__link" target="_blank">Породы животных</a>
+                </li>
+                <li class="footer-customer-list__item">
+                  <a href="#" class="footer-customer-list__link" target="_blank">Дисконтная программа</a>
+                </li>
+                <li class="footer-customer-list__item">
+                  <a href="#" class="footer-customer-list__link" target="_blank">Блог</a>
+                </li>
+                <li class="footer-customer-list__item">
+                  <a href="#" class="footer-customer-list__link" target="_blank">Фотогалерея</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="footer-contacts">
+              <div class="footer-contacts__title">Контакты</div>
+              <div class="footer-services">
+                <div class="footer-phone">
+                  <span class="footer-phone__subtitle">Информационная служба: </span>
+                  <a href="tel:+380444903100" class="footer-phone__link" target="_blank">(044) 490 31
+                    00</a>
+                  <div class="footer-phone__text">Ежедневно с 08:30-21:00 </div>
+                </div>
+                <div class="footer-mail">
+                  <span class="footer-mail__text">Email:</span>
+                  <a href="mailto:info@wezom.com.ua" class="footer-mail__link" target="_blank">info@wezom.com.ua</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-9 offset-3">
+            <div class="footer-bottom__inner">
+              <div class="footer-pay">
+                <div class="footer-pay__item">
+                  <svg width="85" height="28" viewBox="0 0 85 28" fill="none">
+                    <use xlink:href="img/sprite.svg#pay-portmone" />
+                  </svg>
+                </div>
+                <div class="footer-pay__item">
+                  <svg width="42" height="32" viewBox="0 0 42 32" fill="none">
+                    <use xlink:href="img/sprite.svg#pay-master" />
+                  </svg>
+                </div>
+                <div class="footer-pay__item">
+                  <svg width="60" height="20" viewBox="0 0 60 20" fill="#274BA3">
+                    <use xlink:href="img/sprite.svg#pay-visa" />
+                  </svg>
+                </div>
+              </div>
+              <div class="footer-development">
+                <span class="footer-development__text">Разработано в</span>
+                <a href="#" class="footer-development__link" target="_blank">WEZOM</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/swiper-slider.js"></script>
+</body>
+
+</html>
