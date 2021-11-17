@@ -1444,6 +1444,10 @@ body {
   margin-left: -12px;
 }
 
+.footer-pay__visa {
+  fill: url(#visa-gradient);
+}
+
 .footer-development {
   margin-left: auto;
   padding-top: 3px;
