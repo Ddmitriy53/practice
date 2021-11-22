@@ -11,3 +11,11 @@ function seoTextVisibility() {
   else seoButton.textContent = 'Показать все';
 }
 document.querySelector('.seo__button').onclick = seoTextVisibility;
+
+function footerListToggle() {
+  let group = document.querySelector('.footer-firm-list__group');
+
+  if (group.style.display == 'block') group.style.display = 'none';
+  else group.style.display = 'block';
+}
+document.querySelector('.footer-firm-list__title').onclick = footerListToggle;

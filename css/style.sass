@@ -53,10 +53,6 @@ body
 
 .header
   box-shadow: 0px 4px 12px rgba(18, 33, 63, 0.05)
-  height: 104px
-  .container
-    max-width: 100%
-    padding: 10px 25px 7px 40px
   &-info
     font-size: 14px
     display: flex
@@ -74,6 +70,7 @@ body
   &__group
     padding-left: 7px
     & select
+      font-size: 14px
       color: #7B94B0
       text-decoration: underline dashed #7B94B0
       text-underline-offset: 5px
@@ -230,10 +227,6 @@ body
     font-weight: 700
     color: #fff
 
-.best-deals
-  & .container
-    padding-left: var(--bs-gutter-x, 1.7rem)
-
 .deals
   &-head
     display: flex
@@ -302,6 +295,7 @@ body
   display: flex
   &__item
     width: 260px
+    margin: 0 auto
 
 .swiper
   &-wrapper
@@ -621,8 +615,6 @@ body
 
 .benefits
   padding-top: 72px
-  .container
-    padding-left: var(--bs-gutter-x, 1.69rem)
   &__inner
     border-top: 1px solid rgba( 136, 141, 146, .3)
     border-bottom: 1px solid rgba(136, 141, 146, .3)
@@ -703,16 +695,14 @@ body
   margin-top: 97px
   background-color: rgba(2, 108, 0 , .4)
   &__inner
-  &__img
     position: relative
+  &__img
     &-dog
       position: absolute
-      top: -80px
-      left: 13px
+      bottom: 0
     &-cat
       position: absolute
-      top: -25px
-      right: -48px
+      bottom: 0
   &-content
     padding: 31px 40px 0 30px
     display: flex
@@ -812,7 +802,7 @@ body
     &-list
       &__title
         display: block
-        padding-bottom: 21px
+        margin-bottom: 21px
         font-size: 20px
         color: #fff
       &__item
@@ -912,3 +902,203 @@ body
         background-color: #fff
         & svg
           stroke: #E77E42
+
+@media (max-width: 425px)
+
+  body
+    position: relative
+
+  .header
+    height: 80px
+    background-color: #2C9323
+    display: flex
+    align-items: center
+    &-info,
+    &-main
+      display: none
+    &-mob
+      padding: 0 0 0 0
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+  .action-menu
+    margin: 0 5px 0 0
+
+  .deals
+    &-head
+      display: flex
+      flex-direction: column
+      padding: 20px 0 15px 0
+      &__title
+        margin: 0
+        & h2
+          font-size: 25px
+          text-align: center
+    &-filter
+      padding: 15px 0 5px 0
+      justify-content: space-between
+      &__item
+        margin: 0
+      &__button
+        font-size: 12px
+      &-switch
+        display: none
+    &-slider
+      padding: 10px 0 20px 0
+
+  .useful-block
+    padding: 20px 0
+  .search-card
+    margin: 0
+    padding: 30px 10px
+    border-radius: 15px
+    &-tile
+      padding-bottom: 20px
+      justify-content: space-around
+      &__tile
+        margin-bottom: 13px
+    &__title
+      font-size: 30px
+    &__text
+      font-size: 15px
+      padding: 15px 0 20px 0
+    &__link
+      font-size: 14px
+  .blog
+    position: relative
+    padding: 50px 0 0 0
+    &__title
+      padding: 0
+      font-size: 26px
+      text-align: center
+    &-filter
+      &__group
+        justify-content: space-around
+        flex-flow: wrap
+      &__item
+        margin: 4px 0
+      &__button
+        font-size: 13px
+      &__follow
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+    &-tile
+      padding: 25px 0 35px 0
+    &-card
+      &__text
+        margin: 0
+        padding: 5px 0 0 10px
+        font-size: 18px
+  .benefits
+    padding: 40px 0 0 0
+    &-item
+      margin: 20px 0
+  .seo
+    text-align: center
+    &__inner
+      padding: 30px 0
+      height: auto
+    &__title
+      font-size: 28px
+    &__subtitle
+      font-size: 22px
+    &__text
+      &--hidden
+        height: 125px
+        &::after
+          height: 50px
+          top: 75px
+    &__button
+      margin: 40px auto 0 auto
+
+  .involve
+    margin: 0
+    height: auto
+    overflow: hidden
+    &__img
+      &-cat
+        z-index: 1
+        opacity: .2
+        right: -60px
+      &-dog
+        z-index: 1
+        opacity: .2
+        left: -45px
+    &-content
+      padding: 45px 0
+      &__text,
+      &__registration
+        z-index: 2
+      &__text
+        font-size: 21px
+      &__registration
+        margin-top: 40px
+
+  .footer
+    padding: 30px 0 0 0
+    &-logo
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-social
+      justify-content: center
+      padding: 20px 0
+    &-communication
+      flex-direction: column
+      align-items: center
+      &-chat
+        margin: 0 15px 20px 0
+    &-terms
+      padding: 15px 0 30px 0
+      &-list
+        text-align: center
+        &__item
+          margin-bottom: 15px
+
+    &-firm-list,
+    &-customer-list
+      &__title
+        cursor: pointer
+        width: fit-content
+      &__group
+        display: none
+
+    &-bottom
+      margin: 0
+      &__inner
+        padding-top: 25px
+        flex-direction: column
+        align-items: center
+    &-development
+      margin: 0
+      padding-top: 20px
+
+    &-contacts
+      margin-left: 0
+      text-align: center
+
+  .to-top
+    position: fixed
+    right: 10px
+    bottom: 10px
+    &__link
+      flex-direction: column-reverse
+    &__img
+      margin: 0
+
+@media (min-width: 1439px)
+  .header
+    box-shadow: 0px 4px 12px rgba(18, 33, 63, 0.05)
+    height: 104px
+    .container
+      max-width: 100%
+      padding: 10px 25px 7px 40px
+  .best-deals
+    & .container
+      padding-left: var(--bs-gutter-x, 1.7rem)
+  .benefits
+    & .container
+      padding-left: var(--bs-gutter-x, 1.69rem)

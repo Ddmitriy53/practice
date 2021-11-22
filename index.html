@@ -13,7 +13,7 @@
 
 <body>
 
-  <header class="header">
+  <header id="header" class="header">
     <div class="container">
       <div class="header-info">
         <div class="header-l">
@@ -224,13 +224,40 @@
 
       </div>
 
+      <div class="header-mob">
+        <div class="burger-menu">
+          <button class="burger-menu__button">
+            <svg width="40" height="40" viewBox="0 0 100 80" fill="#fff">
+              <use xlink:href="img/sprite.svg#burger-menu" />
+            </svg>
+          </button>
+        </div>
+        <div class="header-logo">
+          <a href="#">
+            <svg width="114" height="41" viewBox="0 0 114 41" fill="#fff">
+              <use xlink:href="img/sprite.svg#wezom-logo" />
+            </svg>
+          </a>
+        </div>
+        <div class="action-menu">
+          <span class="action-menu__item action-menu__item-basket ">
+            <a href="#">
+              <svg width="30" height="29" viewBox="0 0 30 29" stroke="#fff" fill="none">
+                <use xlink:href="img/sprite.svg#basket" />
+              </svg>
+            </a>
+            <span class="action-menu__basket-count">0</span>
+          </span>
+        </div>
+
+      </div>
     </div>
   </header>
 
   <div class="best-deals">
     <div class="container">
       <div class="row">
-        <div class="col-12">
+        <div class="col-lg-8 col-12">
           <div class="deals-head">
             <div class="deals-head__title">
               <h2>Лучшие предложения недели</h2>
@@ -250,25 +277,31 @@
                 <button class="deals-filter__button">Грызунам</button>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="deals-filter-switch">
-              <div class="deals-filter-switch__prev deals-filter-switch__prev--first">
-                <button class="deals-filter-switch__button">
-                  <svg width="9" height="14" viewBox="0 0 9 14" stroke="white" fill="none">
-                    <use xlink:href="img/sprite.svg#arrow-filter" />
-                  </svg>
-                </button>
-              </div>
-              <div class="deals-filter-switch__next">
-                <button class="deals-filter-switch__button">
-                  <svg width="9" height="14" viewBox="0 0 9 14" stroke="white" fill="none">
-                    <use xlink:href="img/sprite.svg#arrow-filter" />
-                  </svg>
-                </button>
-              </div>
+        <div class="col-lg-1 col-12 lg-offset-3">
+          <div class="deals-filter-switch">
+            <div class="deals-filter-switch__prev deals-filter-switch__prev--first">
+              <button class="deals-filter-switch__button">
+                <svg width="9" height="14" viewBox="0 0 9 14" stroke="white" fill="none">
+                  <use xlink:href="img/sprite.svg#arrow-filter" />
+                </svg>
+              </button>
+            </div>
+            <div class="deals-filter-switch__next">
+              <button class="deals-filter-switch__button">
+                <svg width="9" height="14" viewBox="0 0 9 14" stroke="white" fill="none">
+                  <use xlink:href="img/sprite.svg#arrow-filter" />
+                </svg>
+              </button>
             </div>
           </div>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-12">
           <div class="deals-slider">
             <div class="swiper">
               <div class="swiper-wrapper">
@@ -308,7 +341,6 @@
                             </svg>
                           </div>
                           <span class="deal-card__reviews-count">(0)</span>
-
                         </a>
                         <div class="deal-card__buy">
                           <div class="deal-card__wholesale">
@@ -346,7 +378,8 @@
                         </div>
                       </a>
                       <div class="deal-card__info">
-                        <div class="deal-card__title">Schesir Dog Small Adult Lamb сухой монопротеиновый корм для собак
+                        <div class="deal-card__title">Schesir Dog Small Adult Lamb сухой монопротеиновый корм для
+                          собак
                           малых
                           пород</div>
                         <a href="#" class="deal-card__rating">
@@ -368,7 +401,6 @@
                             </svg>
                           </div>
                           <span class="deal-card__reviews-count">(12)</span>
-
                         </a>
                         <div class="deal-card__buy">
                           <div class="deal-card__wholesale">
@@ -428,7 +460,6 @@
                             </svg>
                           </div>
                           <span class="deal-card__reviews-count">(65)</span>
-
                         </a>
                         <div class="deal-card__buy">
                           <div class="deal-card__wholesale">
@@ -486,7 +517,6 @@
                             </svg>
                           </div>
                           <span class="deal-card__reviews-count">(0)</span>
-
                         </a>
                         <div class="deal-card__buy">
                           <div class="deal-card__wholesale">
@@ -524,7 +554,8 @@
                         </div>
                       </a>
                       <div class="deal-card__info">
-                        <div class="deal-card__title">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум корм для
+                        <div class="deal-card__title">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум корм
+                          для
                           щенков
                           мини и малых пород, 2 кг</div>
                         <a href="#" class="deal-card__rating">
@@ -583,7 +614,8 @@
                         </div>
                       </a>
                       <div class="deal-card__info">
-                        <div class="deal-card__title">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум корм для
+                        <div class="deal-card__title">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум корм
+                          для
                           щенков
                           мини и малых пород, 2 кг</div>
                         <a href="#" class="deal-card__rating">
@@ -636,16 +668,16 @@
             </div>
 
           </div>
-
         </div>
       </div>
+
     </div>
   </div>
 
   <div class="useful-block">
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="search-card">
             <span class="search-card__subtitle">Объявления о продаже</span>
             <div class="search-card__logo">
@@ -682,7 +714,7 @@
             </a>
           </div>
         </div>
-        <div class="col-7 offset-1">
+        <div class="col-12 col-lg-7 lg-offset-1">
           <div class="blog">
             <div class="blog__title">Полезные материалы</div>
             <div class="blog-filter">
@@ -723,7 +755,8 @@
                     <div class="blog-card__day">22</div>
                     <div class="blog-card__month">сент</div>
                   </div>
-                  <a href="#" class="blog-card__text">Как выбрать корм для питомца. Советы профессионалов. Выбираем корм
+                  <a href="#" class="blog-card__text">Как выбрать корм для питомца. Советы профессионалов. Выбираем
+                    корм
                     для котов 7+</a>
                 </div>
 
@@ -802,7 +835,7 @@
     <div class="container">
       <div class="benefits__inner">
         <div class="row">
-          <div class="col-2 offset-2">
+          <div class="col-12 col-lg-2 lg-offset-2">
             <div class="benefits-item">
               <div class="benefits-item__img">
                 <svg width="45" height="32" viewBox="0 0 45 32" fill="#E9793A">
@@ -813,7 +846,7 @@
             </div>
           </div>
 
-          <div class="col-2">
+          <div class="col-12 col-lg-2">
             <div class="benefits-item">
               <div class="benefits-item__img">
                 <svg width="30" height="32" viewBox="0 0 30 32" fill="#E9793A">
@@ -824,7 +857,7 @@
             </div>
           </div>
 
-          <div class="col-2">
+          <div class="col-12 col-lg-2">
             <div class="benefits-item">
               <div class="benefits-item__img">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="#E9793A">
@@ -835,7 +868,7 @@
             </div>
           </div>
 
-          <div class="col-2">
+          <div class="col-12 col-lg-2">
             <div class="benefits-item">
               <div class="benefits-item__img">
                 <svg width="40" height="26" viewBox="0 0 40 26" fill="none" stroke="#E9793A">
@@ -855,13 +888,15 @@
     <div class="container">
       <div class="seo__inner">
         <div class="row">
-          <div class="col-10 offset-1">
+          <div class="col-12 col-lg-10 lg-offset-1">
             <span class="seo__title">Зоомагазин для домашних питомцев</span>
             <p class="seo__text">Любящие владельцы собак и кошек всегда хотят порадовать своих любимцев новыми
-              игрушками, приобрести качественную амуницию, обеспечить животному полноценное питание и отдых, заботятся о
+              игрушками, приобрести качественную амуницию, обеспечить животному полноценное питание и отдых, заботятся
+              о
               его здоровье. Зоомагазин — это любимое место для всех любителей животных.</p>
             <span class="seo__subtitle">Каким должен быть хороший магазин товаров для животных</span>
-            <p class="seo__text seo__text--hidden">Многие владельцы животных часами просматривают адреса зоомагазинов в
+            <p class="seo__text seo__text--hidden">Многие владельцы животных часами просматривают адреса зоомагазинов
+              в
               интернете, читают отзывы. Далеко не каждый зоомагазин в Киеве и других городах соответствует критериям,
               важным для покупателя: <br>
               Многие владельцы животных часами просматривают адреса зоомагазинов в интернете, читают отзывы. Далеко не
@@ -877,13 +912,13 @@
     <div class="container">
       <div class="involve__inner">
         <div class="row">
-          <div class="col-3 offset-2">
+          <div class=" col-12 col-lg-2 offset-2">
             <div class="involve__img">
               <img class="involve__img-dog" src="img/involve/dog.png" alt="Dog">
               <img class="involve__img-cat" src="img/involve/cat.png" alt="Cat">
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-12 col-lg-5">
             <div class="involve-content">
               <div class="involve-content__text">Акции, скидки и специальные предложения для зарегистрированных
                 пользователей</div>
@@ -899,7 +934,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="row">
-          <div class="col-2">
+          <div class="col-12 col-lg-2">
             <div class="footer-logo">
               <div class="footer-logo__img">
                 <a href="#" class="footer-logo__link">
@@ -911,7 +946,7 @@
               <p class="footer-logo__caption">&#169; 2020 Интернет-магазин</p>
             </div>
           </div>
-          <div class="col-2 offset-1">
+          <div class="col-12 col-lg-2 lg-offset-1">
             <div class="footer-social">
               <div class="footer-social__item">
                 <a href="#" class="footer-social__link">
@@ -936,7 +971,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 offset-1">
+          <div class="col-12 col-lg-3 lg-offset-1">
             <div class="footer-communication">
               <a href="#" class="footer-communication-chat" target="_blank">
                 <div class="footer-communication-chat__img">
@@ -956,9 +991,9 @@
               </a>
             </div>
           </div>
-          <div class="col-1 offset-2">
+          <div class="col-12 col-lg-1 lg-offset-2">
             <div class="to-top">
-              <a href="#" class="to-top__link" target="_blank">
+              <a href="#header" class="to-top__link">
                 <span class="to-top__text">Вверх</span>
                 <span class="to-top__img">
                   <svg width="14" height="9" viewBox="0 0 14 9" stroke="white" fill="none">
@@ -973,7 +1008,7 @@
 
       <div class="footer-main">
         <div class="row">
-          <div class="col-2">
+          <div class="col-12 col-lg-2">
             <div class="footer-terms">
               <ul class="footer-terms-list">
                 <li class="footer-terms-list__item">
@@ -988,60 +1023,66 @@
               </ul>
             </div>
           </div>
-          <div class="col-2 offset-1">
+          <div class="col-12 col-lg-2 lg-offset-1">
             <div class="footer-firm">
               <ul class="footer-firm-list">
-                <li class="footer-firm-list__title">Компания</li>
-                <li class="footer-firm-list__item">
-                  <a href="#" class="footer-firm-list__link" target="_blank">О компании</a>
-                </li>
-                <li class="footer-firm-list__item">
-                  <a href="#" class="footer-firm-list__link" target="_blank">Адреса магазинов «ZooBonus»</a>
-                </li>
-                <li class="footer-firm-list__item">
-                  <a href="#" class="footer-firm-list__link" target="_blank">Вакансии</a>
-                </li>
-                <li class="footer-firm-list__item">
-                  <a href="#" class="footer-firm-list__link" target="_blank">Благотворительность</a>
-                </li>
-                <li class="footer-firm-list__item">
-                  <a href="#" class="footer-firm-list__link" target="_blank">Контакты</a>
+                <li class="footer-firm-list__title footer-title-js">Компания
+                  <ul class="footer-firm-list__group">
+                    <li class="footer-firm-list__item">
+                      <a href="#" class="footer-firm-list__link" target="_blank">О компании</a>
+                    </li>
+                    <li class="footer-firm-list__item">
+                      <a href="#" class="footer-firm-list__link" target="_blank">Адреса магазинов «ZooBonus»</a>
+                    </li>
+                    <li class="footer-firm-list__item">
+                      <a href="#" class="footer-firm-list__link" target="_blank">Вакансии</a>
+                    </li>
+                    <li class="footer-firm-list__item">
+                      <a href="#" class="footer-firm-list__link" target="_blank">Благотворительность</a>
+                    </li>
+                    <li class="footer-firm-list__item">
+                      <a href="#" class="footer-firm-list__link" target="_blank">Контакты</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-3 offset-1">
+          <div class="col-12 col-lg-3 lg-offset-1">
             <div class="footer-customer">
               <ul class="footer-customer-list">
-                <li class="footer-customer-list__title">Покупателям</li>
-                <li class="footer-customer-list__item">
-                  <a href="#" class="footer-customer-list__link" target="_blank">Доставка и оплата</a>
-                </li>
-                <li class="footer-customer-list__item">
-                  <a href="#" class="footer-customer-list__link" target="_blank">FAQ</a>
-                </li>
-                <li class="footer-customer-list__item">
-                  <a href="#" class="footer-customer-list__link" target="_blank">Подарочные сертификаты</a>
-                </li>
-                <li class="footer-customer-list__item">
-                  <a href="#" class="footer-customer-list__link" target="_blank">Акции </a>
-                </li>
-                <li class="footer-customer-list__item">
-                  <a href="#" class="footer-customer-list__link" target="_blank">Породы животных</a>
-                </li>
-                <li class="footer-customer-list__item">
-                  <a href="#" class="footer-customer-list__link" target="_blank">Дисконтная программа</a>
-                </li>
-                <li class="footer-customer-list__item">
-                  <a href="#" class="footer-customer-list__link" target="_blank">Блог</a>
-                </li>
-                <li class="footer-customer-list__item">
-                  <a href="#" class="footer-customer-list__link" target="_blank">Фотогалерея</a>
+                <li class="footer-customer-list__title footer-title-js">Покупателям
+                  <ul class="footer-customer-list__group">
+                    <li class="footer-customer-list__item">
+                      <a href="#" class="footer-customer-list__link" target="_blank">Доставка и оплата</a>
+                    </li>
+                    <li class="footer-customer-list__item">
+                      <a href="#" class="footer-customer-list__link" target="_blank">FAQ</a>
+                    </li>
+                    <li class="footer-customer-list__item">
+                      <a href="#" class="footer-customer-list__link" target="_blank">Подарочные сертификаты</a>
+                    </li>
+                    <li class="footer-customer-list__item">
+                      <a href="#" class="footer-customer-list__link" target="_blank">Акции </a>
+                    </li>
+                    <li class="footer-customer-list__item">
+                      <a href="#" class="footer-customer-list__link" target="_blank">Породы животных</a>
+                    </li>
+                    <li class="footer-customer-list__item">
+                      <a href="#" class="footer-customer-list__link" target="_blank">Дисконтная программа</a>
+                    </li>
+                    <li class="footer-customer-list__item">
+                      <a href="#" class="footer-customer-list__link" target="_blank">Блог</a>
+                    </li>
+                    <li class="footer-customer-list__item">
+                      <a href="#" class="footer-customer-list__link" target="_blank">Фотогалерея</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-12 col-lg-3">
             <div class="footer-contacts">
               <div class="footer-contacts__title">Контакты</div>
               <div class="footer-services">
@@ -1063,7 +1104,7 @@
 
       <div class="footer-bottom">
         <div class="row">
-          <div class="col-9 offset-3">
+          <div class="col-12 col-lg-9 lg-offset-3">
             <div class="footer-bottom__inner">
               <div class="footer-pay">
                 <div class="footer-pay__item">
