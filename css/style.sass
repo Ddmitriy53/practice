@@ -79,7 +79,7 @@ body
 .info-menu
   list-style: none
   display: flex
-  margin-left: 70px
+  margin-left: 68px
   &__item
     margin-right: 16px
     &:last-of-type
@@ -105,7 +105,7 @@ body
 
 .callback
   display: flex
-  margin: -1px 47px 0 0
+  margin-right: 46px
   &__group
     margin: -1px 0 0 8px
     & li a
@@ -148,9 +148,7 @@ body
     padding: 20px 0 0 0
   &-menu
     display: inline-flex
-    margin: 3px 0 0 96px
     &__item
-      margin-right: 39px
       &-img
         & svg
           transition: .5s
@@ -270,7 +268,7 @@ body
     &-switch
       margin-left: auto
       display: flex
-      padding: 5px 1px 0 0
+      padding-top: 9px
       &__prev
         margin-right: 8px
         & svg
@@ -512,7 +510,6 @@ body
       display: flex
       padding: 18px 0 0 0
     &__item
-      margin-right: 5px
       &:last-of-type
         margin-right: 0
     &__button
@@ -540,8 +537,6 @@ body
   &-tile
     display: flex
     flex-flow: wrap
-    justify-content: space-between
-    padding: 46px 0 0 7px
   &-card
     width: 395px
     margin-bottom: 49px
@@ -559,8 +554,9 @@ body
       display: block
       position: relative
     &__img
-      border-radius: 12px
       transition: .5s
+      & img
+        border-radius: 12px
     &__play-img
       position: absolute
       top: 50%
@@ -691,7 +687,6 @@ body
       text-decoration: underline dashed #E77E42
 
 .involve
-  height: 180px
   margin-top: 97px
   background-color: rgba(2, 108, 0 , .4)
   &__inner
@@ -811,7 +806,6 @@ body
           margin-bottom: 0
 
   &-contacts
-    margin-left: -5px
     &__title
       font-size: 20px
       color: #fff
@@ -822,12 +816,13 @@ body
       color: #fff
     &__link
       display: block
-      margin-top: 15px
+      margin: 15px auto 0 auto
       font-family: 'Roboto Condensed'
       font-size: 32px
       font-weight: 700
       color: rgba(16, 225, 125, 1)
       line-height: 37px
+      width: fit-content
     &__text
       color: rgba(255, 255, 255, .6)
       padding: 7px 0 21px 0
@@ -903,7 +898,7 @@ body
         & svg
           stroke: #E77E42
 
-@media (max-width: 425px)
+@media (max-width: 700px)
 
   body
     position: relative
@@ -913,6 +908,8 @@ body
     background-color: #2C9323
     display: flex
     align-items: center
+    .container
+      max-width: 650px
     &-info,
     &-main
       display: none
@@ -973,6 +970,7 @@ body
       font-size: 26px
       text-align: center
     &-filter
+      justify-content: center
       &__group
         justify-content: space-around
         flex-flow: wrap
@@ -987,6 +985,7 @@ body
         transform: translateX(-50%)
     &-tile
       padding: 25px 0 35px 0
+      justify-content: center
     &-card
       &__text
         margin: 0
@@ -1016,7 +1015,6 @@ body
 
   .involve
     margin: 0
-    height: auto
     overflow: hidden
     &__img
       &-cat
@@ -1060,11 +1058,14 @@ body
 
     &-firm-list,
     &-customer-list
+      text-align: center
       &__title
         cursor: pointer
+        margin: 0 auto 20px auto
         width: fit-content
       &__group
         display: none
+        margin-top: 10px
 
     &-bottom
       margin: 0
@@ -1089,14 +1090,335 @@ body
     &__img
       margin: 0
 
-@media (min-width: 1439px)
+@media (min-width: 701px) and (max-width: 1199px)
+
+  body
+    position: relative
+
+  .header
+    &-mob
+      display: none
+    &-info
+      padding: 10px 0
+    &-l
+      align-items: center
+    &-r
+      margin-left: auto
+      align-items: center
+    &-main
+      padding: 15px 0 0 0
+      flex-flow: column
+    &-logo
+      order: 1
+    &-action
+      order: 2
+      margin: -40px 0 0 auto
+    &-menu
+      margin: 0 0 20px 0
+      order: 3
+      flex-wrap: wrap
+      justify-content: flex-start
+      &__item
+        margin: 15px 30px 0 0
+  .info-menu
+    margin-left: 0
+  .callback
+    flex-flow: column
+    margin: 0 20px 0 0
+    &__group
+      margin: 0
+  .language
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__item
+      margin: 5px 0 0 0
+      &:first-of-type
+        margin: 0
+
+  .deals
+    &-head
+      flex-direction: column
+    &-filter
+      padding: 30px 0 20px 0
+      &-switch
+        display: none
+
+  .search-card
+    padding: 50px 40px
+    &-tile
+      &__item
+        margin-bottom: 30px
+
+  .useful-block
+    padding: 10px 0 0 0
+
+  .blog
+    padding: 50px 0 30px 0
+    text-align: center
+    position: relative
+    &-filter
+      &__group
+      &__follow
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+    &-tile
+      justify-content: center
+    &-card
+      margin-top: 20px
+      &:first-of-type
+        margin-top: 0
+
+  .seo
+    &__inner
+      height: auto
+
+  .involve
+    &__inner
+      padding: 10px 0 30px 0
+    &__img
+      z-index: 1
+      opacity: .6
+    &-content
+      &__text,
+      &__registration
+        z-index: 2
+
+  .footer
+    padding: 0
+    &-top
+      padding-top: 20px
+    &-logo
+      text-align: center
+      &__caption
+        margin: 0 auto
+    &-social
+      padding: 30px 0
+      justify-content: space-evenly
+      &__item
+        margin: 0
+    &-communication
+      justify-content: space-evenly
+      &-chat
+        margin-top: 0
+    &-main
+      padding-top: 0
+    &-terms
+      padding: 30px 0
+      &-list
+        display: flex
+        justify-content: space-between
+    &-firm-list__title,
+    &-customer-list__title,
+    &-contacts
+      text-align: center
+    &-firm-list__group,
+    &-customer-list__group
+      text-align: left
+
+  .to-top
+    position: fixed
+    bottom: 20px
+    right: 20px
+
+@media (min-width: 768px) and (max-width: 1199px)
+  .callback
+    margin: 0 40px 0 0
+  .language
+    flex-direction: row
+    &__item
+      margin: 0 5px
+  .search-card
+    &-tile
+      justify-content: space-around
+      &__item
+        margin: 20px 20px
+  .blog
+    &-filter
+      justify-content: center
+
+@media (min-width: 992px) and (max-width: 1199px)
+  body
+    position: unset
+  .header
+    &-menu
+      margin: 15px 0 30px 0
+      justify-content: center
+  .info-menu
+    margin-left: 50px
+  .callback
+    flex-flow: row
+    &__group
+      margin: 0 0 0 10px
+  .search-card
+    &-tile
+      &__item
+        margin: 0
+  .blog
+    &-tile
+      justify-content: space-around
+    &-card
+      margin: 0 0 50px 0
+
+  .involve
+    &-content
+      padding: 40px 40px 15px 40px
+
+  .footer
+    &-terms
+      padding: 38px 0 0 0
+      &-list
+        flex-wrap: wrap
+    &-social
+      padding: 0
+    &-communication
+      justify-content: space-between
+    &-firm-list__title,
+    &-customer-list__title,
+    &-contacts
+      margin: 0
+      text-align: left
+    &-firm-list__group,
+    &-customer-list__group
+      margin-top: 10px
+
+  .to-top
+    position: unset
+    margin: 0
+    &__link
+      flex-direction: column-reverse
+      align-items: center
+    &__img
+      margin: 0 0 5px 0
+
+@media (min-width: 1200px)
+  .header
+    &-mob
+      display: none
+    &-info
+      padding: 10px 0
+    &-main
+      padding: 20px 0
+      align-items: center
+    &-menu
+      margin: 0 0 0 20px
+      &__item
+        margin-right: 20px
+
+  .best-deals
+    padding-top: 40px
+
+  .deals
+    &-head
+      padding: 0
+
+  .blog
+    position: relative
+    text-align: center
+    padding-top: 50px
+    &-filter
+      justify-content: center
+      &__item
+        margin-right: 30px
+      &__follow
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+    &-tile
+      justify-content: space-evenly
+      padding: 40px 0 20px 0
+
+  .involve
+    &-content
+      padding: 30px 0
+
+  .to-top
+    margin-left: auto
+
+@media (min-width: 1400px)
   .header
     box-shadow: 0px 4px 12px rgba(18, 33, 63, 0.05)
-    height: 104px
     .container
-      max-width: 100%
-      padding: 10px 25px 7px 40px
+      max-width: 98%
+      padding: 0 7px 0 21px
+  .blog
+    padding-top: 0
+
+@media (min-width: 1900px)
+
+  .header
+    padding: 10px 0 0 0
+    &-main
+      padding: 20px 0 6px 0
+      align-items: flex-start
+    &-info
+      padding: 0
+    &-menu
+      margin: 3px 0 0 96px
+      &__item
+        margin-right: 39px
+
+  .deals
+    &-filter
+      &-switch
+        justify-content: flex-end
+
+  .useful-block
+    padding: 10px 0 0 0
+
+  .search-card
+    margin: 5px -13px 0 15px
+
+  .blog
+    text-align: left
+    position: unset
+    &-filter
+      justify-content: flex-start
+      &__item
+        margin-right: 5px
+      &__follow
+        position: relative
+        left: 0
+        transform: none
+        margin-left: auto
+    &-tile
+      padding: 46px 0 0 7px
+      justify-content: space-between
+
+  .involve
+    &-content
+      padding: 31px 43px 32px 33px
+    &__img
+      &-dog
+        left: 17.88%
+      &-cat
+        left: 31.59%
+
+  .footer
+    &-top
+      padding: 0 13px 0 0
+    &-social
+      margin-left: -1px
+    &-communication
+      padding: 9px 0 0 0
+    &-main
+      padding-right: 19px
+    &-firm-list__group,
+    &-customer-list__group
+      margin-top: 21px
+    &-firm-list__title,
+    &-customer-list__title
+      margin: 0
+
+  .to-top
+    &__link
+      justify-content: flex-end
+      margin: 1px 2px 0 0
   .best-deals
+    padding-top: 44px
     & .container
       padding-left: var(--bs-gutter-x, 1.7rem)
   .benefits

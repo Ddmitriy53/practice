@@ -12,9 +12,19 @@ const swiper = new Swiper('.swiper', {
     clickable: true
   },
   breakpoints: {
-    300: {
+    280: {
       slidesPerView: 1,
       centeredSlides: true
+    },
+    768: {
+      slidesPerView: 2
+    },
+    992: {
+      slidesPerView: 3
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20
     },
     1440: {
       slidesPerView: 5
